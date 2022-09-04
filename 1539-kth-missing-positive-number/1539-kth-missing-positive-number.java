@@ -23,7 +23,6 @@ class Solution {
         if(arr[left] - left - 1 < k){
             return left + k + 1;
         }
-        //only one element is left
         return left + k ;
         
     }
