@@ -9,13 +9,20 @@ class Solution {
         if(k <= 0) return 0;
         int left = 0;
         int right = arr.length-1;
-        while(left <= right){
+        while(left < right){
             int mid = left + (right - left)/2;
             if(arr[mid] - mid -1 < k ){
                 left = mid + 1;
             }else{
-                right = mid - 1;
+                right = mid;
             }
+        }
+        //if there are two elements left
+        //[1,2,3,4]
+        //[0,1,2,3]
+        //[0,0,0,0]
+        if(arr[right] - right - 1 < k){
+            return right + k + 1;
         }
         //only one element is left
         return left + k ;
