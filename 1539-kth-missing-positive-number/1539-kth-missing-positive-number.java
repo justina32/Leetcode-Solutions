@@ -17,12 +17,11 @@ class Solution {
                 right = mid;
             }
         }
-        //if there are two elements left
         //[1,2,3,4]
         //[0,1,2,3]
         //[0,0,0,0]
         if(arr[right] - right - 1 < k){
-            return right + k + 1;
+            return left + k + 1;
         }
         //only one element is left
         return left + k ;
