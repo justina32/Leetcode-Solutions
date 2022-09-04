@@ -14,7 +14,7 @@ class Solution {
         }
         //case 1 if we have two elements left 
         if(right * right <= x) return (int) right;
-        //case 2 only one elements or case 1's eles
+        //case 2 only one elements or case 1's else
         return (int)left;
     }
 }
