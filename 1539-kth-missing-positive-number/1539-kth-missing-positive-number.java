@@ -20,7 +20,7 @@ class Solution {
         //[1,2,3,4]
         //[0,1,2,3]
         //[0,0,0,0]
-        if(arr[right] - right - 1 < k){
+        if(arr[left] - left - 1 < k){
             return left + k + 1;
         }
         //only one element is left
