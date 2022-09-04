@@ -1,9 +1,10 @@
 class Solution {
     public int findKthPositive(int[] arr, int k) {
         if(arr == null || arr.length == 0) return k;
-        // arr[i] : [2,3,4,7,11]
-        // i:       [0,1,2,3,4]
-        //arr[i]-i: [2,2,2,4,7] 
+        // arr[i] :     [2,3,4,7,11]
+        // i:           [0,1,2,3,4]
+        //arr[i]-i-1:   [1,1,1,3,6] 
+        
         if(arr == null || arr.length == 0) return k;
         if(k <= 0) return 0;
         int left = 0;
